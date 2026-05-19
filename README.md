@@ -81,6 +81,14 @@ See [`contributors/example.json`](./contributors/example.json) for a complete ex
   <sub>Full-Stack Developer</sub><br>
   <sub>Pakistan</sub>
 </td>
+<td align='center' width='200px'>
+  <a href='https://github.com/AbdulBasitx19'>
+    <img src='https://github.com/AbdulBasitx19.png?size=160' width='96px' alt='Abdul Basit' style='border-radius: 50%;'><br>
+    <sub><b>Abdul Basit</b></sub>
+  </a><br>
+  <sub>Full-Stack Developer</sub><br>
+  <sub>Pakistan</sub>
+</td>
 </tr>
 </table>
 </p>
