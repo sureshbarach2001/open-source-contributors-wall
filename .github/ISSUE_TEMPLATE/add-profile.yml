@@ -1,0 +1,36 @@
+name: Help Me Add My Profile
+description: Request help with adding your contributor JSON file
+title: "Help me add my contributor profile"
+labels: ["good first issue", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this issue if you need help adding your contributor JSON file.
+
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub Username
+      description: Enter your GitHub username.
+      placeholder: sureshbarach2001
+    validations:
+      required: true
+
+  - type: input
+    id: linkedin_post
+    attributes:
+      label: LinkedIn Post Link
+      description: Paste your LinkedIn post link if you already created it.
+      placeholder: https://www.linkedin.com/posts/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you facing?
+      description: Explain where you are stuck.
+      placeholder: I am stuck while creating the branch...
+    validations:
+      required: true

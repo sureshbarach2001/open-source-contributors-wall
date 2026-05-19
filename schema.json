@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Contributor Profile",
+  "description": "Schema for contributor JSON files in Open Source Contributors Wall.",
+  "type": "object",
+  "required": [
+    "name",
+    "country",
+    "role",
+    "github",
+    "highlight"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 80,
+      "description": "Contributor full name."
+    },
+    "country": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 60,
+      "description": "Contributor country."
+    },
+    "role": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 80,
+      "description": "Contributor role."
+    },
+    "github": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github.com/[A-Za-z0-9-]+/?$",
+      "description": "Contributor GitHub profile URL."
+    },
+    "linkedin": {
+      "type": "string",
+      "format": "uri",
+      "description": "Contributor LinkedIn profile URL."
+    },
+    "portfolio": {
+      "type": "string",
+      "format": "uri",
+      "description": "Contributor portfolio URL."
+    },
+    "highlight": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 160,
+      "description": "Short contributor introduction."
+    }
+  }
+}

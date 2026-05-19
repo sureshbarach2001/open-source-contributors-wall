@@ -1,0 +1,38 @@
+name: Validate Contributor Files
+
+on:
+  pull_request:
+    paths:
+      - "contributors/*.json"
+      - "schema.json"
+      - "scripts/validate_contributors.py"
+      - "scripts/validate_pr_metadata.py"
+      - "scripts/generate_contributors_wall.py"
+      - ".github/PULL_REQUEST_TEMPLATE.md"
+      - "CONTRIBUTING.md"
+      - "docs/LINKEDIN_POST_GUIDE.md"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Validate contributor files
+        run: python scripts/validate_contributors.py
+
+      - name: Validate pull request metadata
+        run: python scripts/validate_pr_metadata.py
+
+      - name: Check contributor wall generation
+        run: python scripts/generate_contributors_wall.py
