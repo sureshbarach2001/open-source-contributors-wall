@@ -1,8 +1,20 @@
 # Open Source Contributors Wall
 
-Open Source Contributors Wall is a beginner-friendly repository where anyone can practice a clean first GitHub contribution by adding one JSON profile.
+Open Source Contributors Wall is a beginner-friendly repository where anyone can make a clean first open-source contribution by adding one JSON profile.
 
-One contributor. One file. No README conflicts. No unnecessary setup.
+One contributor. One file. One clean pull request.
+
+---
+
+## Why This Repository
+
+This project is designed for people who want to practice the real GitHub contribution flow without dealing with README conflicts or complicated setup.
+
+- Fork a repository
+- Create a branch
+- Add one JSON file
+- Open a pull request
+- Join the contributor wall
 
 ---
 
@@ -13,13 +25,11 @@ One contributor. One file. No README conflicts. No unnecessary setup.
 3. Add one JSON file inside `contributors/`
 4. Open a pull request
 
-That is all you need to get started.
-
-For the full contribution steps, read [CONTRIBUTING.md](./CONTRIBUTING.md).
+For the full step-by-step guide, read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ---
 
-## Rules
+## Contribution Rules
 
 - Add only one JSON file inside `contributors/`
 - Use your GitHub username as the file name
@@ -27,13 +37,11 @@ For the full contribution steps, read [CONTRIBUTING.md](./CONTRIBUTING.md).
 - Do not add unrelated changes
 - Use real public profile information only
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening your pull request.
-
 ---
 
-## Contributor File Format
+## Contributor Profile Format
 
-Create a file like this:
+Create your file like this:
 
 ```json
 {
@@ -47,7 +55,7 @@ Create a file like this:
 }
 ```
 
-See [`contributors/example.json`](./contributors/example.json) for a sample.
+See [`contributors/example.json`](./contributors/example.json) for a complete example.
 
 ---
 
@@ -55,6 +63,7 @@ See [`contributors/example.json`](./contributors/example.json) for a sample.
 
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [docs/GIT_COMMANDS.md](./docs/GIT_COMMANDS.md)
+- [docs/LINKEDIN_POST_GUIDE.md](./docs/LINKEDIN_POST_GUIDE.md)
 
 ---
 
